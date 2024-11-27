@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 COPY . /app
 
 # 安裝 Composer
-RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
+# RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
 
 # 安裝 Composer 依賴
 RUN composer install --no-dev --optimize-autoloader -vv
